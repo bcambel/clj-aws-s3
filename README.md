@@ -15,7 +15,9 @@ and update the access control lists (ACLs) for buckets and objects.
 
 Add the following dependency to your `project.clj` file:
 
+```clojure
     [clj-aws-s3 "0.3.10"]
+```
 
 ## Example
 
@@ -32,6 +34,13 @@ Add the following dependency to your `project.clj` file:
 
 (println (slurp (:content (s3/get-object cred "my-bucket" "some-key"))))
 ```
+
+## Changes
+
+0.3.11
+
+* Upgraded to the latest version of Clojure (1.8 as of now)
+* Upgraded AWS Java SDK
 
 ## Documentation
 
